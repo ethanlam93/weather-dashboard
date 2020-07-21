@@ -30,7 +30,7 @@
             //Populate all data in the right dashboard
             function showWeather() {
                 var nameOfTheCityClicked = ($(this).attr("data-name"));
-                var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + nameOfTheCityClicked + "&units=imperial&appid=4aa00dba2ffa0a80a6d24790f15d7055"
+                var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + nameOfTheCityClicked + "&units=imperial&appid=4aa00dba2ffa0a80a6d24790f15d7055"
                 var selectIcon = ($("#icon"))
 
                 // console.log(weatherUrl)
@@ -54,7 +54,7 @@
                         //add icon
                         // console.log(select)
                         var iconUrl = response.weather[0].icon
-                        $(selectIcon).attr("src", "http://openweathermap.org/img/wn/" + iconUrl + "@2x.png")
+                        $(selectIcon).attr("src", "https://openweathermap.org/img/wn/" + iconUrl + "@2x.png")
 
                         //add humidity
                         var currentHumidity = response.main.humidity;
@@ -68,7 +68,7 @@
                         var lat = response.coord.lat;
                         var long = response.coord.lon
                         var forecastUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=current,minutely,hourly&appid=4aa00dba2ffa0a80a6d24790f15d7055&units=imperial"
-                        var uvIndexUrl = "http://api.openweathermap.org/data/2.5/uvi?appid=4aa00dba2ffa0a80a6d24790f15d7055&lat=" + lat + "&lon=" + long
+                        var uvIndexUrl = "https://api.openweathermap.org/data/2.5/uvi?appid=4aa00dba2ffa0a80a6d24790f15d7055&lat=" + lat + "&lon=" + long
 
                         // add 5day forecast
                         $.ajax({
