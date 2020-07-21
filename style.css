@@ -1,0 +1,95 @@
+header{
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+.navbar{
+margin-top: 100px;
+}
+
+.city-title {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+  }
+#city-name{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.lead{
+    color: white;
+}
+.p-2{
+    
+    margin:10px;
+    background-color: cornflowerblue;
+}
+
+.info{
+    padding: 20px;
+    background-color: darkgray;
+}
+
+.forecastLabel
+, .clearBtn{
+    margin: 10px;
+}
+
+.input-group{
+   margin-bottom: 10px;
+}
+
+.search-label,
+.forecastLabel{
+    font-weight: bold;
+}
+
+#uv-index{
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+#index-label{
+    padding-right: 5px;
+}
+
+.green{
+background-color: rgb(145, 255, 145);
+}
+
+.yellow{
+background-color: rgb(255, 244, 96);
+}
+
+.orange{
+background-color: rgb(254, 130, 85);
+}
+
+.red{
+background-color: red;
+}
+
+@-webkit-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  body {
+   animation-name: fade;
+   animation-duration: 3s; 
+   animation-fill-mode: forwards; 
+  }
+
