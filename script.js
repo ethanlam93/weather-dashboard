@@ -83,7 +83,7 @@
                                     $("#temperature" + i).text("Temp: " + response.daily[i - 1].temp.day + "\u00B0 F")
                                     $("#humidity" + i).text("Humidity: " + response.daily[i - 1].humidity + "%")
                                     var iconUrl = response.daily[i - 1].weather[0].icon
-                                    $("#icon" + i).attr("src", "http://openweathermap.org/img/wn/" + iconUrl + "@2x.png")
+                                    $("#icon" + i).attr("src", "https://openweathermap.org/img/wn/" + iconUrl + "@2x.png")
                                 }
                             })
 
