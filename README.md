@@ -35,3 +35,5 @@ Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather da
 <img src="media/media2.png">
 <img src="media/media3.png">
 
+My Github Repo: https://github.com/ethanlam93<br>
+Deployment: https://ethanlam93.github.io/weather-dashboard/
